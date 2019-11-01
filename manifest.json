@@ -1,0 +1,16 @@
+{
+  "name": "Delarta's personal gallery",
+  "short_name": "Delarta's Gallery",
+  "description": "Delarta's Personnal Gallery",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#018ABB",
+  "theme_color": "#018ABB",
+  "icons": [
+      {
+          "src": "icon.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+  ]
+}

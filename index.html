@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Del's Gallery</title>
+    <meta name="description" content="My first PWA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/materialize.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#00897B" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo" id="logo-container"
+          ><img src="./icon.png" alt="logo"
+        /></a>
+        <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+        <ul class="topnav right hide-on-med-and-down"></ul>
+        <ul class="sidenav" id="nav-mobile"></ul>
+      </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+    <div id="body-content">
+      
+    </div>
+    <footer class="white page-footer">
+        <div class="footer-copyright">
+          <div class="container">
+            © 2019 Delarta Tok Adin
+          </div>
+        </div>
+      </footer>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+          navigator.serviceWorker
+            .register("./service-worker.js")
+            .then(() => {
+              console.log("Service worker registered");
+            })
+            .catch(() => {
+              console.log("failed to register service worker");
+            });
+        });
+      } else {
+        console.log("Service worker not supported in this browser");
+      }
+    </script>
+  </body>
+</html>
