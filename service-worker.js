@@ -4,14 +4,19 @@ var urlsToCache = [
   "/nav.html",
   "/index.html",
   "/pages/home.html",
-  "/pages/about.html",
+  "/pages/author.html",
   "/pages/contact.html",
   "/css/materialize.min.css",
+  "/css/style.css",
   "/js/materialize.min.js",
   "/js/main.js",
   "/icon.png",
   "/img/avatar.png",
-  "./img/underwater.svg"
+  "/img/underwater.svg",
+  "/img/gmail.svg",
+  "/img/linkedin.svg",
+  "/img/github-512.png",
+  "/img/artwork/",
 ];
 
 self.addEventListener("install", event => {
