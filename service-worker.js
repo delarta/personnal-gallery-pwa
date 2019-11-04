@@ -1,4 +1,4 @@
-const CACHE_NAME = "personalgallery-v2"
+const CACHE_NAME = "personalgallery-v3"
 var urlsToCache = [
   "/",
   "/nav.html",
