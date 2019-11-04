@@ -1,4 +1,4 @@
-const CACHE_NAME = "personalgallery-v1"
+const CACHE_NAME = "personalgallery-v2"
 var urlsToCache = [
   "/",
   "/nav.html",
@@ -16,7 +16,12 @@ var urlsToCache = [
   "/img/gmail.svg",
   "/img/linkedin.svg",
   "/img/github-512.png",
-  "/img/artwork/",
+  "/img/artwork/girl.jpg",
+  "/img/artwork/light.jpg",
+  "/img/artwork/pevita.jpg",
+  "/img/artwork/procrastinator.jpg",
+  "/img/artwork/raja_justin_jadi.jpg",
+  "/img/artwork/underwater.jpg",
 ];
 
 self.addEventListener("install", event => {
